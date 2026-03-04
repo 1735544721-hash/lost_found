@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="80" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A90E2" stop-opacity="1" />
+      <stop offset="100%" stop-color="#357ABD" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5A623" stop-opacity="1" />
+      <stop offset="100%" stop-color="#E6941A" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 放大镜图标 -->
+  <g transform="translate(10, 15)">
+    <circle cx="20" cy="20" r="15" fill="none" stroke="url(#yellowGradient)" stroke-width="3" opacity="0.9"/>
+    <circle cx="20" cy="20" r="8" fill="url(#yellowGradient)" opacity="0.3"/>
+    <line x1="32" y1="32" x2="40" y2="40" stroke="url(#yellowGradient)" stroke-width="3" stroke-linecap="round"/>
+    <!-- 搜索中心的小点 -->
+    <circle cx="20" cy="20" r="2" fill="#E6941A"/>
+  </g>
+  
+  <!-- 主标题 -->
+  <text x="70" y="45" font-family="Microsoft YaHei, PingFang SC, sans-serif" 
+        font-size="24" font-weight="bold" fill="url(#blueGradient)">
+    校园失物招领
+  </text>
+  
+  <!-- 副标题/英文 -->
+  <text x="72" y="60" font-family="Arial, sans-serif" 
+        font-size="10" fill="#666666" opacity="0.8">
+    Campus Lost &amp; Found
+  </text>
+  
+</svg>

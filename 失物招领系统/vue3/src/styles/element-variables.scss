@@ -1,0 +1,144 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #6BB6FF,
+    ),
+    'success': (
+      'base': #48BB78,
+    ),
+    'warning': (
+      'base': #ED8936,
+    ),
+    'danger': (
+      'base': #F56565,
+    ),
+    'info': (
+      'base': #4299E1,
+    )
+  ),
+);
+
+/* 只需要重写你需要的即可 */
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+// 校园失物招领系统 - Element Plus 扁平化自定义样式
+// 卡片样式 - 现代扁平化设计
+.el-card {
+  border: 2px solid #E2E8F0 !important;
+  border-radius: 12px !important;
+  background: #FFFFFF !important;
+}
+
+// 选择器样式
+.el-select {
+  width: 150px !important;
+}
+
+// Switch 样式
+.el-switch__core .el-switch__action {
+  border-radius: 50% !important;
+}
+
+// Radio 样式
+.el-radio__inner {
+  border-radius: 50% !important;
+  &::after {
+    border-radius: 50% !important;
+  }
+}
+
+// Dialog 样式
+.el-dialog {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  
+  .el-dialog__header {
+    margin: 0;
+    padding: 20px 24px;
+    border-bottom: 1px solid #ebeef5;
+    
+    .el-dialog__title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  
+  .el-dialog__body {
+    padding: 24px;
+  }
+  
+  .el-dialog__footer {
+    padding: 16px 24px;
+    border-top: 1px solid #ebeef5;
+  }
+}
+
+// Form 样式
+.el-form {
+  .el-form-item {
+    margin-bottom: 24px;
+    
+    .el-form-item__label {
+      font-weight: 500;
+      color: #333;
+      padding-bottom: 8px;
+    }
+    
+    .el-form-item__error {
+      padding-top: 4px;
+    }
+  }
+}
+
+// Input 样式 - 扁平化设计
+.el-input {
+  .el-input__wrapper {
+    border-radius: 12px !important;
+    border: 2px solid #E2E8F0 !important;
+    background: #FFFFFF !important;
+
+    &.is-focus {
+      border-color: #6BB6FF !important;
+    }
+  }
+
+  &.is-disabled .el-input__wrapper {
+    background-color: #F1F5F9 !important;
+    border-color: #CBD5E0 !important;
+  }
+
+  // 图标样式
+  .el-input__prefix,
+  .el-input__suffix {
+    .el-input__prefix-inner,
+    .el-input__suffix-inner {
+      color: #6BB6FF !important;
+      font-size: 16px !important;
+
+      .el-icon {
+        color: #6BB6FF !important;
+        font-size: 16px !important;
+        width: 16px !important;
+        height: 16px !important;
+
+        svg {
+          width: 16px !important;
+          height: 16px !important;
+          fill: currentColor !important;
+        }
+      }
+    }
+  }
+}
+
+// 表单内按钮组样式
+.el-form-item__content {
+  .el-button + .el-button {
+    margin-left: 12px;
+  }
+}
+
+// 必填星号样式
+.el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before {
+  color: #FF7875;
+}
+
